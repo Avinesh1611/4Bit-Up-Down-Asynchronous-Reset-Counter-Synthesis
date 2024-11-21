@@ -1,5 +1,4 @@
-# 4Bit-Up-Down-Asynchronous-Reset-Counter-Synthesis
-
+# EXP 4: 4Bit Up-Down Counter Asynchronous Reset Counter-Synthesize the Gate Level Netlist and tabulate Area, Power and Timing reports.
 ## Aim:
 
 Synthesize 4Bit-Up-Down-Asynchronous-Reset-Counter design using Constraints and analyse reports, Timing, area and Power.
@@ -26,6 +25,7 @@ Synthesis requires three files as follows,
 
 •	The SDC File must contain the following commands;
 
+```
 create_clock -name clk -period 2 -waveform {0 1} [get_ports "clk"]
 
 set_clock_transition -rise 0.1 [get_clocks "clk"]
@@ -45,6 +45,7 @@ ii, iii → Sets Clock Rise and Fall time to 100ps.
 iv → Sets Clock Uncertainty to 10ps.
 
 v, vi → Sets the maximum limit for I/O port delay to 1ps.
+```
 
 ### Step 3 : Performing Synthesis
 
@@ -65,17 +66,25 @@ used.
 
 #### Synthesis RTL Schematic :
 
+![Screenshot (14)](https://github.com/user-attachments/assets/83854707-6dbb-4f18-ae51-370968be7e5e)
+
+
 #### Area report:
+
+![Screenshot (16)](https://github.com/user-attachments/assets/3365ab10-1505-4d27-bade-8526e4779fac)
+
 
 #### Power Report:
 
+![Screenshot (18)](https://github.com/user-attachments/assets/4145f421-4b62-469f-90f3-1e99827c5242)
+
+
 #### Timing Report: 
+
+![Screenshot (19)](https://github.com/user-attachments/assets/8956805f-019b-43da-9476-beef1bf47859)
+
 
 #### Result: 
 
 The generic netlist has been created, and area, power, and timing reports have been tabulated and generated using Genus.
-
-
-
-
 
